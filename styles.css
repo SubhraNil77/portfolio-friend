@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #4B0082; /* Dark indigo text */
+  background-color: #F5F5F5; /* Soft off-white background */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF69B4; /* Soft pink navbar */
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styling for Navbar Links */
+.navbar a {
+  font-family: 'Cinzel', serif;
+  color: #4B0082; /* Dark indigo for links */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover and Active Effects */
+.navbar a:hover {
+  background-color: #E6E6FA; /* Lavender background on hover */
+  color: #FF69B4; /* Soft pink text on hover */
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(255, 105, 180, 0.85), rgba(255, 182, 193, 0.6)), url('path_to_your_hero_background.jpg') no-repeat center center/cover;
+  color: #4B0082; /* Dark indigo text on hero */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.hero-content button {
+  background-color: #FF69B4; /* Soft pink button */
+  color: #FFF; /* White text */
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: #FF1493; /* Deeper pink on hover */
+}
+
+/* About Section */
+.about-section {
+  padding: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  background-color: #FFF; /* Light background for portfolio */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Slider Styles */
+/* Slider Styles */
+/* Slider Styles */
+.slider {
+  position: relative;
+  max-width: 600px; /* Set max width */
+  margin: 1.5rem auto; /* Center the slider */
+  overflow: hidden; /* Hide overflow to show one image at a time */
+  border-radius: 15px; /* Rounded corners for the slider container */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.slides {
+  display: flex; /* Display images in a row */
+  transition: transform 0.7s ease; /* Smooth transition for slide effect */
+  width: 100%; /* Ensure the slides take the full width */
+}
+
+.slides img {
+  width: 100%; /* Full width for responsive design */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space */
+  border-radius: 15px; /* Round edges of images */
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 105, 180, 0.8); /* Pink background */
+  border: none;
+  padding: 10px 15px; /* Padding for a larger clickable area */
+  font-size: 18px;
+  border-radius: 25px; /* More rounded edges */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  color: white; /* White text color */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  z-index: 1;
+}
+
+/* Position buttons */
+.prev {
+  left: 20px; /* Position left button */
+}
+
+.next {
+  right: 20px; /* Position right button */
+}
+
+/* Button Hover Effect */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 20, 147, 1); /* Darker pink on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+
+
+/* Gallery Styles */
+.portfolio-gallery {
+  margin-top: 2rem; /* Space above the gallery */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between images */
+  padding: 0 1rem; /* Add padding */
+}
+
+.gallery-grid img {
+  width: 100%; /* Responsive images */
+  border-radius: 50px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px; /* Set max width */
+  border: 1px solid #4B0082; /* Border color */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #FF69B4; /* Soft pink button */
+  color: #FFF; /* White text */
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #FF1493; /* Deeper pink on hover */
+}
+
+/* Social Media Section */
+.social-media-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between icons */
+}
+
+.social-icon img {
+  width: 40px; /* Icon size */
+  transition: transform 0.3s; /* Smooth scaling */
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4B0082; /* Dark indigo footer */
+  color: #FFF; /* White text */
+}
